@@ -1,7 +1,5 @@
 package com.xj.xs.thread;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 import java.util.concurrent.*;
 
 /**
@@ -9,6 +7,7 @@ import java.util.concurrent.*;
  */
 public class ProducerConsumer {
 
+    //private volatile String name;
     public static void main(String[] args) {
         ProducerConsumer producerConsumer = new ProducerConsumer();
         Stroge stroge = producerConsumer.new Stroge();
