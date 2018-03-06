@@ -19,6 +19,7 @@ public class RedisDemo {
         jedis.close();
 
         jedisPools();
+
     }
 
     public static void jedisPools(){
