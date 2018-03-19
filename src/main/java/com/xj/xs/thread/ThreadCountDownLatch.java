@@ -10,6 +10,7 @@ public class ThreadCountDownLatch {
     public static void main(String[] args) {
         final CountDownLatch latch = new CountDownLatch(3);
 
+
         new Thread(new Runnable() {
             @Override
             public void run() {
