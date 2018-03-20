@@ -1,5 +1,9 @@
 package com.xj.xs.java;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * 使用标志跳出多层循环
  * Created by xiong on 2018/3/20.
@@ -18,6 +22,13 @@ public class BreakDemo {
                     break;
                 }
             }
+        }
+
+        List<Integer> list = Arrays.asList(2,34,5,6,1,8);
+        Collections.sort(list);
+
+        for (Integer ll : list){
+            System.out.println(ll);
         }
     }
 }
