@@ -1,5 +1,7 @@
 package com.xj.xs.java;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * 接口可以继承接口。抽象类可以实现(implements)接口，抽象类可以继承具体类。抽象类中可以有静态的main方法。
  *
@@ -14,5 +16,15 @@ public abstract class abstractDemo extends User {
 
     public static void main(String[] args) {
         System.out.println("你好");
+
+        Integer a = 10;
+        System.out.println(a.hashCode());
+
+        User user = new User();
+        user.setName("xiong");
+
+        System.out.println(user.hashCode());
+
+
     }
 }

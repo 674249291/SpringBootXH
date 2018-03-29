@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -17,7 +18,6 @@ public class CacheDemo {
 
     public static void main(String[] args) {
     }
-
     private ReadWriteLock rwl = new ReentrantReadWriteLock();
     public Object getData(String key){
         Object value = null;
